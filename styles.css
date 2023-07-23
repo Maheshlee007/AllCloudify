@@ -1,3 +1,142 @@
 /* /* css  */
 /* TODO: working o n it */
 /* FIXME::backdrop */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* typography */
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+}
+
+html {
+  font-size: 62.5%;
+  /* which gives 10px  as if browser default font size 
+  changes then it changes accordingly if we give 10px it won't happen*/
+}
+body {
+  font-family: "Inter", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: var(--color-body);
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  text-transform: capitalize;
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.2s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+/* badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: no-wrap; /* it is used to keep all the text in one line */
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+/* lists */
+.lists {
+  list-style: none;
+  padding: 0;
+  color: var(var(--color-headings));
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url("");
+}""
+
+/* -------------------large screen  version--------------- */
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8 rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  /* links */
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
