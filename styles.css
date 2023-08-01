@@ -96,7 +96,7 @@ a {
 }
 
 /* lists */
-.lists {
+.list {
   list-style: none;
   padding: 0;
   color: var(var(--color-headings));
@@ -109,12 +109,33 @@ a {
 
 .list--tick {
   list-style-image: url("./icons/tick.svg");
-  padding-left: 3rem;
+  padding-left: 4rem;
+  color: green;
 }
 
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
+}
+/* icons */
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  /* we use single hyphen - just to seperate the words and it's completely new one */
+  background-color: #f1f2f1f0;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-primary);
 }
 
 /* -------------------large screen  version--------------- */

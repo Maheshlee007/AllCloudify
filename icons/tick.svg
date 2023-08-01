@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 11">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 11">
   <defs>
     <style>
       .cls-1 {
         fill: none;
-        stroke: #f00;
+        stroke: #00f;
         stroke-width: 2px;
         fill-rule: evenodd;
       }
