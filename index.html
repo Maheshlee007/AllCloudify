@@ -6,9 +6,50 @@
 
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
     <title>FutureCloudify</title>
   </head>
   <body>
+    <nav class="nav collapsible">
+      <a href="/"><img src="icons/logo.svg" alt="main logo" /></a>
+      <div class="icon-container nav__toggler">
+        <img src="icons/menu.svg" alt="menu icon" class="icon" />
+      </div>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">Vps</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <section class="block block--dark block--skewed-left">
+      <div class="container grid grid--col-2">
+        <header class="block__header hero_content">
+          <h1 class="block__heading">Cloud Hosting For Pros</h1>
+          <p class="hero__tagline">
+            Deploy Your Websites in less than 60 seconds...
+          </p>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img src="images/banner.png" alt="Hero banner Image" width="100% " />
+      </div>
+    </section>
+
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">item 1</h2>
+        <span class="icon-container collapsible__chevron">
+          <img src="icons/chevron.svg" class="icon" alt="chevron icon" />
+        </span>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi
+        suscipit. Esse vitae pariatur saepe maxime atque explicabo rerum
+        officiis nam aut velit, fugiat autem, et repellat iure officia
+        obcaecati?
+      </div>
+    </div>
+
     <div class="callout callout--primary">
       <div class="grid grid--col-2">
         <div class="callout__content">
